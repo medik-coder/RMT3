@@ -11,7 +11,7 @@ This repository contains the notebook and plotting scripts for a pilot study of 
 
 ## Environment
 
-The Colab run records Python 3.13.16, LightGBM 4.7.0, XGBoost 3.4.1, StatsForecast 2.1.1, pandas 2.2.3, and NumPy 2.1.3. Versions are recorded from the Colab run; packages without pins were not recorded. Kaggle, SciPy, statsmodels, Matplotlib, and PyTorch are therefore listed without version pins in `requirements.txt`.
+The Colab run records Python 3.13.16, LightGBM 4.7.0, XGBoost 3.4.1, StatsForecast 2.1.1, pandas 2.2.3, and NumPy 2.1.3. Versions are recorded from the Colab run; packages without pins were not recorded. Kaggle, SciPy, statsmodels, Matplotlib, and PyTorch are therefore listed without version pins in `requirements.txt`. The notebook environment cell prints their versions on a fresh run so the file can be pinned to the actual runtime.
 
 Install dependencies with:
 
