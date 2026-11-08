@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ## Reproducing the pilot
 
 1. Accept the M5 Forecasting Accuracy competition data-use rules on Kaggle.
-2. In Google Colab, add a secret named `KAGGLE_API_TOKEN` containing your Kaggle API token. Do not place the token in notebook code or commit it to the repository. An earlier public notebook revision contained a token; revoke it and replace it before relying on it.
+2. In Google Colab, add a secret named `KAGGLE_API_TOKEN` containing your Kaggle API token. The current notebook reads it through Colab Secrets; keep credentials out of notebook source code.
 3. Open `RMT3.ipynb` in Colab and run its cells in order. It downloads the competition files through the Kaggle API; the M5 data are not included here.
 4. The article reports the pre-specified W4 holdout only (store `CA_1`, seed `0`). The notebook includes an optional W1–W4 exploratory run, disabled by default. Those post hoc results are disclosed separately and are excluded from the article's primary W4 conclusions.
 5. Run `fig_models.py` and `fig_windows.py` from the repository root to regenerate the figures. Both scripts use values embedded in the files and do not require `preds.pkl` or `results_long.csv`.
