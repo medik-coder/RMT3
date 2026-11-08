@@ -20,7 +20,7 @@ ax.tick_params(axis="x",labelsize=7)
 ax.set_xticks([1700,1800,1900,1941])
 ax.text(x0+3,-0.9,"models use only the last 365 training days (grey, right part)",fontsize=5.5,color="#444")
 ax.legend(handles=[Patch(color=col["train"],label="training data"),
-   Patch(color=col["fc"],label="W1--W3: forecast, not scored"),
+   Patch(color=col["fc"],label="W1--W3: exploratory, excluded from article"),
    Patch(facecolor=col["val"],hatch="///",edgecolor="#777",label="validation (not used)"),
    Patch(color=col["test"],label="W4: scored test")],
    fontsize=6,loc="upper left",frameon=False,ncol=2,bbox_to_anchor=(0,1.30))
